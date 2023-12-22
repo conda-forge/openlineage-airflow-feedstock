@@ -41,6 +41,7 @@ test:
 about:
   summary: OpenLineage integration with Airflow
   home: https://github.com/OpenLineage/OpenLineage
+  description: "Starting from Airflow version 2.7.0 OpenLineage integration is included in Airflow repository as a provider. The apache-airflow-providers-openlineage package significantly ease lineage tracking in Airflow, ensuring stability by embedding the functionality directly into each provider and simplifying the process for users to select and manage lineage collection consumers.As a result, starting from Airflow 2.7.0 one should use the native Airflow Openlineage provider package."
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
@@ -50,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - rxm7706
+    - millsks
