@@ -1,5 +1,5 @@
 {% set name = "openlineage-airflow" %}
-{% set version = "1.7.0" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7547d6422ed6b97c4f699081bb1c88957e911d2969d4b6d0153625faa944e6aa
+  sha256: dcfaabb39f06a4e2c487ef563fa70cb8e48ec3b5eee71d6a86029dc4ee9ddfe3
 
 build:
   noarch: python
@@ -41,7 +41,8 @@ test:
 about:
   summary: OpenLineage integration with Airflow
   home: https://github.com/OpenLineage/OpenLineage
-  description: "Starting from Airflow version 2.7.0 OpenLineage integration is included in Airflow repository as a provider. The apache-airflow-providers-openlineage package significantly ease lineage tracking in Airflow, ensuring stability by embedding the functionality directly into each provider and simplifying the process for users to select and manage lineage collection consumers.As a result, starting from Airflow 2.7.0 one should use the native Airflow Openlineage provider package."
+  description: "Starting from Airflow version 2.7.0 OpenLineage integration is included in Airflow repository as a provider. The apache-airflow-providers-openlineage package significantly ease lineage tracking in Airflow, ensuring stability by embedding the functionality directly into each provider and simplifying the process
+    for users to select and manage lineage collection consumers.As a result, starting from Airflow 2.7.0 one should use the native Airflow Openlineage provider package."
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
