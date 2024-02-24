@@ -13,6 +13,8 @@ Development: https://github.com/OpenLineage/OpenLineage/tree/main/integration/ai
 
 Documentation: https://openlineage.io/docs/integrations/airflow/
 
+Starting from Airflow version 2.7.0 OpenLineage integration is included in Airflow repository as a provider. The apache-airflow-providers-openlineage package significantly ease lineage tracking in Airflow, ensuring stability by embedding the functionality directly into each provider and simplifying the process for users to select and manage lineage collection consumers.As a result, starting from Airflow 2.7.0 one should use the native Airflow Openlineage provider package.
+
 Current build status
 ====================
 
@@ -147,5 +149,9 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/openlineage-integration-common](https://github.com/conda-forge/openlineage-integration-common/)
+* [@conda-forge/openlineage-python](https://github.com/conda-forge/openlineage-python/)
+* [@conda-forge/openlineage-sql](https://github.com/conda-forge/openlineage-sql/)
+* [@millsks](https://github.com/millsks/)
 * [@rxm7706](https://github.com/rxm7706/)
 

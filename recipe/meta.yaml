@@ -1,5 +1,5 @@
 {% set name = "openlineage-airflow" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7547d6422ed6b97c4f699081bb1c88957e911d2969d4b6d0153625faa944e6aa
+  sha256: 5ad8b0995793d17b5eb358cd7faed94f03f03b47a4ec2d3cbb6926fd46448204
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -52,3 +52,6 @@ extra:
   recipe-maintainers:
     - rxm7706
     - millsks
+    - conda-forge/openlineage-integration-common
+    - conda-forge/openlineage-sql
+    - conda-forge/openlineage-python
