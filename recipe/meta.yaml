@@ -36,7 +36,7 @@ test:
     - pip check
   requires:
     - pip
-    - apache-airflow >=2.3
+    - apache-airflow >=2.3,<2.9.1
 
 about:
   summary: OpenLineage integration with Airflow
