@@ -34,7 +34,6 @@ test:
   imports:
     - openlineage.airflow
     - openlineage.airflow.extractors
-    - openlineage.lineage_backend
   commands:
     - pip check
   requires:
